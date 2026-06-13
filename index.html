@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
+  /* Mode vitrine (#vitrine) : floutage volontaire des infos personnelles du client pour l'aperçu public */
+  body.vitrine .flou{filter:blur(6px);-webkit-filter:blur(6px);user-select:none;-webkit-user-select:none;pointer-events:none;}
   :root{
     --bleu:#0e3a5d;
     --bleu-fonce:#092941;
@@ -111,20 +113,20 @@
 <div class="bandeau-maquette">✏️ Maquette de démonstration — couleurs, photos et textes 100% personnalisables selon vos goûts</div>
 
 <div class="topbar">
-  <span>📍 Brétigny-sur-Orge et tout l'Essonne (91)</span>
+  <span>📍 <span class="flou">Brétigny-sur-Orge</span> et tout l'Essonne (91)</span>
   <span>⭐ Noté <strong>5/5</strong> par nos clients</span>
 </div>
 
 <nav>
   <div class="logo">
     <span class="pictos">🔧</span>
-    <div>RH Plomberie Chauffage<small>Radhouane Hani — Artisan à Brétigny-sur-Orge</small></div>
+    <div><span class="flou">RH Plomberie Chauffage</span><small class="flou">Radhouane Hani — Artisan à Brétigny-sur-Orge</small></div>
   </div>
-  <a class="nav-tel" href="tel:0664970874">📞 06 64 97 08 74</a>
+  <a class="nav-tel flou" href="tel:0664970874">📞 06 64 97 08 74</a>
 </nav>
 
 <header class="hero">
-  <h1>Votre plombier-chauffagiste de confiance à <span>Brétigny-sur-Orge</span></h1>
+  <h1>Votre plombier-chauffagiste de confiance à <span class="flou">Brétigny-sur-Orge</span></h1>
   <p class="sous">Dépannage, chauffage, rénovation de salle de bain : un artisan local qui travaille avec soin, vous explique tout et tient ses délais. Depuis plus de 10 ans au service des habitants de l'Essonne.</p>
   <div class="badges">
     <div class="badge">⭐ <b>5/5</b> — 9 avis clients</div>
@@ -169,7 +171,7 @@
 <section>
   <div class="conteneur">
     <h2 class="titre-section">Pourquoi nos clients nous restent fidèles</h2>
-    <p class="intro-section">Certains clients font appel à M. Hani depuis plus de 10 ans. Voilà ce qui fait la différence.</p>
+    <p class="intro-section">Certains clients font appel à <span class="flou">M. Hani</span> depuis plus de 10 ans. Voilà ce qui fait la différence.</p>
     <div class="points">
       <div class="point"><div class="gros">10+</div><p>années d'expérience auprès des particuliers de l'Essonne</p></div>
       <div class="point"><div class="gros">5/5</div><p>la note donnée par nos clients sur PagesJaunes</p></div>
@@ -226,19 +228,20 @@
     <h2 class="titre-section">Contact</h2>
     <p class="intro-section">Un dépannage, un projet, une question ? Appelez directement, vous parlerez à l'artisan, pas à un standard.</p>
     <div class="bloc-contact">
-      <strong style="color:var(--bleu);">Radhouane Hani — RH Plomberie Chauffage</strong>
-      <a class="tel-geant" href="tel:0664970874">06 64 97 08 74</a>
+      <strong class="flou" style="color:var(--bleu);">Radhouane Hani — RH Plomberie Chauffage</strong>
+      <a class="tel-geant flou" href="tel:0664970874">06 64 97 08 74</a>
       <a class="btn-principal" href="tel:0664970874">Demander un devis gratuit</a>
-      <p class="infos-contact">18 rue Jean Moulin, 91220 Brétigny-sur-Orge<br>Du lundi au samedi</p>
+      <p class="infos-contact"><span class="flou">18 rue Jean Moulin, 91220 Brétigny-sur-Orge</span><br>Du lundi au samedi</p>
     </div>
   </div>
 </section>
 
 <footer>
-  © 2026 RH Plomberie Chauffage — Radhouane Hani · 18 rue Jean Moulin, 91220 Brétigny-sur-Orge · Tous droits réservés
+  © 2026 <span class="flou">RH Plomberie Chauffage — Radhouane Hani · 18 rue Jean Moulin, 91220 Brétigny-sur-Orge</span> · Tous droits réservés
 </footer>
 
 <a class="appel-flottant" href="tel:0664970874">📞 Appeler le plombier</a>
 
+<script>if(location.hash==='#vitrine'){document.body.classList.add('vitrine');}</script>
 </body>
 </html>
